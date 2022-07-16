@@ -24,9 +24,7 @@ const watcher = () => {
 	
 	gulp.watch(`${settings.path.source}/${settings.dev.files.images.folder}/${settings.dev.files.images.watch}`, images).on('all', browserSync.reload);
 	
-	gulp.watch(`${settings.path.source}/${settings.dev.files.js.folder}/${settings.dev.files.js.watch}.js`, webpack).on('all', browserSync.reload);
-
-	gulp.watch(`${settings.path.source}/${settings.dev.files.js.folder}/${settings.dev.files.js.watch}.vue`, webpack).on('all', browserSync.reload);
+	gulp.watch(`${settings.path.source}/${settings.dev.files.js.watch}`, webpack).on('all', browserSync.reload);
 
 	gulp.watch(`${settings.path.source}/${settings.dev.files.favicon.folder}/${settings.dev.files.favicon.watch}`, favicon).on('all', browserSync.reload);
 };

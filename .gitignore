@@ -1,5 +1,3 @@
 node_modules
 
-*.fig
-
 npm-debug.log*

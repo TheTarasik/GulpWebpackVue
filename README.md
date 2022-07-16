@@ -21,7 +21,6 @@
         "source": "src",
         "build": "dist"
     },
-    "stylesCompressSuffix": ".min",
     "dev": {
         "jsCompress": false,
         "files": {
@@ -46,12 +45,8 @@
                 "watch": "**/*.{png,jpg,jpeg,gif,svg}"
             },
             "js": {
-                "folder": "assets/js",
-                "entry": "**/*.js",
-                "watch": "**/*"
-            },
-            "jsLibs": {
-                "entry": "node_modules/"
+                "entry": "**/*.{js,vue}",
+                "watch": "**/*.{js,vue}"
             },
             "favicon": {
                 "folder": "favicon",
