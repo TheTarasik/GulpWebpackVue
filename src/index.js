@@ -1,9 +1,5 @@
-import Vue from 'vue';
+import { createApp } from 'vue';
+import App from './App.vue';
 import './assets/styles/style';
 
-new Vue({
-    el: '#app',
-    components: {
-        Hello: () => import('./components/hello')
-    }
-});
+createApp(App).mount('#app');

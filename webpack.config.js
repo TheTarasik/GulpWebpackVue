@@ -44,7 +44,7 @@ module.exports = {
 	resolve: {
 		extensions: ['.js', '.vue', '.scss'],
 		alias: {
-			'vue': 'vue/dist/vue.common.js'
+			vue: 'vue/dist/vue.esm-browser.js'
 		}
 	},
 	performance: {
